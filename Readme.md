@@ -10,7 +10,7 @@ To store values on specific pages only, you can use the [Page Variables](https:/
 
 To store values across multiple tabs in a session, you can use the Stadium Session Variables in the Application Explorer. 
 
-![](images/view.gif)
+![](images/view1.gif)
 
 # Version
 Initial 1.0
