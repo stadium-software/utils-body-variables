@@ -1,8 +1,8 @@
-# Body Variables <!-- omit in toc -->
+# Application Variables <!-- omit in toc -->
 
 Sometimes it is necessary to store values across several pages. This can be achieved by passing the values between pages using the querystring or by using this script. 
 
-This script stores values in attributes against the body tag of the page. In single-page applications, this means the values persist when users navigate between pages. When opening a new window, these values are not no longer exist. 
+This script stores values in attributes against the body tag of the page. In single-page applications, this means the values persist when users navigate between pages inside the application. When opening a new window, these values are lost and no longer exist. 
 
 Browsers implement different limits regarding the possible amount of data that can be stored in this way. Do not use this method for storing large amounts of data.
 
@@ -10,7 +10,7 @@ To store values on specific pages only, you can use the [Page Variables](https:/
 
 To store values across multiple tabs in a session, you can use the Stadium Session Variables in the Application Explorer. 
 
-![](images/view1.gif)
+![](images/view.gif)
 
 # Version
 Initial 1.0
@@ -18,7 +18,7 @@ Initial 1.0
 # Setup
 
 ## Global Script
-1. Create a Global Script called "BodyVariables"
+1. Create a Global Script called "ApplicationVariables"
 2. Add the input parameters below to the Global Script
    1. Action
    2. Name
@@ -79,7 +79,7 @@ function isJsonString(str) {
 ```
 
 ## Event Handler or Script
-1. Drag the "PageVariables" to the event handler or script
+1. Drag the "ApplicationVariables" to the event handler or script
 2. Complete the input parameters
    1. Action (default is "read")
       1. read
