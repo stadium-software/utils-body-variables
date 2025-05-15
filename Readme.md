@@ -2,7 +2,7 @@
 
 Sometimes it is necessary to store values across several pages. This can be achieved by passing the values between pages using the querystring or by using this script. 
 
-This script stores values in attributes against the body tag of the page. In single-page applications, this means the values persist when users navigate between pages inside the application. When opening a new window, these values are lost and no longer exist. 
+This script stores values in attributes against the body tag of the page. In single-page applications, this means the values persist when users navigate between pages inside the application. When opening a new window, these values are lost and no longer exist. There is no timeout when using this method for storing values. 
 
 Browsers implement different limits regarding the possible amount of data that can be stored in this way. Do not use this method for storing large amounts of data.
 
